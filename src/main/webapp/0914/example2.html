@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet"type="text/css" href="css/sub_style.css">
+<script>
+	function changeColor(){
+		alert("정말로 변경하시겠습니까?");
+		//document.getElementById("box1").setAttribute("style","background-color: yellow");
+		//document.getElementById("box1").style.backgroundColor="green";
+		document.getElementById("box1").className = "bgred";
+	}
+</script>
+</head>
+<body>
+<h2>DOM을 활용한 동적 디자인 변경 test</h2>
+<hr>
+<div id="box1">
+<button type="button" onClick="changeColor()">색상 변경</button>
+</div>
+</body>
+</html>
